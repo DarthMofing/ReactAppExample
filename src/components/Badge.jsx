@@ -9,32 +9,32 @@ class Badge extends Component {
       <React.Fragment>
           <div className="Badge m-5">
             <div className="Badge__header">
-              <img src={HeaderBackground} alt="Header Background" />
+              <img src={this.props.header_picture} alt="Header Background" />
             </div>
             <div className="Badge__userInfo container mt-5 mb-1">
                 <div className="Badge__userImage">
-                  <img src={this.props.picture} alt="Profile Picture" />
+                  <img src={this.props.profile_picture} alt="Profile Picture" />
                 </div>
                 <h4 className="text-center mt-5">
-                  Saúl Bravo <i>20</i>
+                  {this.props.name} <i>{this.props.age}</i>
                 </h4>
                 <p className="text-center">
-                  Chihuahua México
+                  {this.props.city}
                 </p>
             </div>
             <div className="Badge__info container pt-3">
               <div className="row">
                 <div className="col">
-                  <h4 className="text-center fw bold">43M</h4>
+                  <h4 className="text-center fw bold">{this.props.followers}</h4>
                   <p className="text-center">Followers</p>
                 </div>
                 <div className="col">
-                  <h4 className="text-center fw bold">102M</h4>
+                  <h4 className="text-center fw bold">{this.props.likes}</h4>
                   <p className="text-center">Likes</p>
                 </div>
                 <div className="col">
-                  <h4 className="text-center fw bold">4</h4>
-                  <p className="text-center">Pictures</p>
+                  <h4 className="text-center fw bold">{this.props.posts}</h4>
+                  <p className="text-center">Posts</p>
                 </div>
               </div>
             </div>
