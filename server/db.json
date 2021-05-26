@@ -1,5 +1,15 @@
 {
-    "badges":[
-        
-    ]
+  "badges": [
+    {
+      "header_picture": "https://i.pinimg.com/564x/a2/7b/39/a27b3983cb1c7d45dc6d113d2e7d0779.jpg",
+      "profile_picture": "https://i.pinimg.com/564x/b7/72/bb/b772bb80f365ff7fa3d2fb038854ec89.jpg",
+      "name": "Saúl Uriel",
+      "city": "Chihuahua",
+      "age": "20",
+      "followers": "",
+      "likes": "",
+      "posts": "",
+      "id": 1
+    }
+  ]
 }
