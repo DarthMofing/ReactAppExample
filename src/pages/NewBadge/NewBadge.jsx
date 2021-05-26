@@ -43,10 +43,10 @@ class NewBadge extends React.Component{
                         <div className="col-6">
                             <Badge
                                 header_picture={this.state.form.header_picture || "https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
-                                profile_picture={this.state.form.profile_picture || "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
-                                name={this.state.form.name || "Saúl Bravo"}
-                                age={this.state.form.age || "20"}
-                                city={this.state.form.city || "Chihuahua"}
+                                profile_picture={this.state.form.profile_picture || "https://i.pinimg.com/564x/26/82/78/2682787e9d8241a3164a67748ac505b6.jpg"}
+                                name={this.state.form.name || "Name LastName"}
+                                age={this.state.form.age || "XX"}
+                                city={this.state.form.city || "City"}
                                 followers={this.state.form.followers || "0"}
                                 likes={this.state.form.likes || "0"}
                                 posts={this.state.form.posts || "0"}
