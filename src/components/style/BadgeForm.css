@@ -14,3 +14,9 @@
     align-self: center;
     border: 1px solid lightgray;
 }
+
+.Submit__button:hover {
+    background-color: #007336;
+    color: white;
+    font-weight: bold;
+}
