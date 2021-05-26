@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './style/Hero.css'
 import HeroImage from '../images/heroBackground.jpg'
 
