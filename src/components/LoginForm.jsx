@@ -29,6 +29,7 @@ class LoginForm extends React.Component {
                         <a href="" className="new_password mb-2">
                             Forgot your password?
                         </a>
+                        <p>New around? <a href="">Sign Up</a></p>
                         <button type="submit" className="Submit__button">
                             Submit
                         </button>
