@@ -10,12 +10,12 @@ class LoginForm extends React.Component {
                         <div className="form-group mb-2">
                             <h1>Login</h1>
                             <label className="mb-1">
-                                User Name
+                                Email
                             </label>
                             <input 
                             type="text" 
                             className="form-control"
-                            name="user_name"/>
+                            name="email"/>
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">

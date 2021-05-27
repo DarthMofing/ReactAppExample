@@ -28,6 +28,15 @@ class SigninForm extends React.Component {
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">
+                                E-mail
+                            </label>
+                            <input
+                            type="text"
+                            className="form-control"
+                            name="email"/>
+                        </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
                                 City
                             </label>
                             <input
