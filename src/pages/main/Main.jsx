@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../../components/Hero'
 import "./Main.css"
 import Button from '../../components/MainButton'
+import Footer from '../../components/Footer'
 
 const Main = props => {
     return(
@@ -13,6 +14,7 @@ const Main = props => {
                 </div>
                 <Hero h={'88vh'}></Hero>
             </div>
+            <Footer s={{bottom:0}}></Footer>
         </React.Fragment>
     );
 }
