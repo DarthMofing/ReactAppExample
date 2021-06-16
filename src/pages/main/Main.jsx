@@ -9,8 +9,8 @@ const Main = props => {
         <React.Fragment>
             <div className="Main">
                 <div className="Main__content">
-                    <h1 className="Main__tittle">{props.tittle || "Welcome Fella"}</h1>
-                    <Button theme={"Button"} contentText={'Lets Start'} link={"/badges"}></Button>
+                    <h1 className="Main__tittle">{props.tittle || "Welcome"}</h1>
+                    <Button theme={"Button"} contentText={'Lets Start'} link={"/login"}></Button>
                 </div>
                 <Hero h={'88vh'}></Hero>
             </div>

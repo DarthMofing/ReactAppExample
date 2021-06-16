@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './style/LoginForm.css'
+import Button from './MainButton'
+import {Link} from 'react-router-dom'
 
 class LoginForm extends React.Component {
     render() {
@@ -29,11 +31,8 @@ class LoginForm extends React.Component {
                         <a href="" className="new_password mb-2">
                             Forgot your password?
                         </a>
-                        <p>New around? <a href="">Sign Up</a></p>
-                        <button type="submit" className="Submit__button">
-                            Submit
-                        </button>
-
+                        <p>New around? <Link to="/signup">Sign Up</Link></p>
+                        <Button theme={"Button"} contentText={'Login'} link={"/badges"}></Button>
                     </form>
                 </div>
             </React.Fragment>

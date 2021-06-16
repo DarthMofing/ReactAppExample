@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './style/SigninForm.css'
+import Button from './MainButton'
 
 class SigninForm extends React.Component {
     render() {
@@ -37,6 +38,15 @@ class SigninForm extends React.Component {
                         </div>
                         <div className="form-group mb-2">
                             <label className="mb-1">
+                                Password
+                            </label>
+                            <input
+                            type="password"
+                            className="form-control"
+                            name="password"/>
+                        </div>
+                        <div className="form-group mb-2">
+                            <label className="mb-1">
                                 City
                             </label>
                             <input
@@ -56,9 +66,7 @@ class SigninForm extends React.Component {
                         <div className="form-group mb-2">
                             <p>Already have an account? <a href="">Login</a></p>
                         </div>
-                        <button type="submit" className="Submit__button">
-                            Register
-                        </button>
+                        <Button theme={"Button"} contentText={'Sign up'} link={"/login"}></Button>
                     </form>
                 </div>
             </React.Fragment>

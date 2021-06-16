@@ -5,6 +5,8 @@ import Hero from '../../components/Hero'
 import BadgeForm from '../../components/BadgeForm'
 import api from '../../libs/fetch'
 import Footer from '../../components/Footer'
+import PageError from "../../components/PageError";
+import Loader from "../../components/Loader";
 
 class NewBadge extends React.Component{
 
@@ -48,6 +50,13 @@ class NewBadge extends React.Component{
     }
 
     render(){
+        if(this.state.loading){
+            return <Loader></Loader>
+        }
+        
+        if(this.state.error){
+            return <PageError error = {this.state.error.message}></PageError>
+        }
         return(
             <React.Fragment>
                 <Hero h={'15vh'}></Hero>

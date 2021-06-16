@@ -2,6 +2,7 @@ import React from 'react'
 import './Signin.css'
 import SigninForm from '../../components/SigninForm'
 import Hero from '../../components/Hero'
+import Footer from '../../components/Footer'
 
 class Signin extends React.Component {
     render() {
@@ -13,6 +14,7 @@ class Signin extends React.Component {
                     </div>
                 <Hero h={'88vh'}></Hero>
                 </div>
+                <Footer s={{bottom:0}}></Footer>
             </React.Fragment>
         );
     }
