@@ -1,12 +1,13 @@
 import React from 'react'
-import './NewBadge.css'
 import Badge from '../../components/Badge'
 import Hero from '../../components/Hero'
 import BadgeForm from '../../components/BadgeForm'
+import './EditBadge.css'
+import '../NewBadge/NewBadge.css'
 import api from '../../libs/fetch'
 import Footer from '../../components/Footer'
 
-class NewBadge extends React.Component{
+class EditBadge extends React.Component{
 
     state = {
         loading : false,
@@ -25,6 +26,20 @@ class NewBadge extends React.Component{
         },
     }
 
+    componentDidMount() {
+        this.fetchData();
+    }
+
+    fetchData = async () => {
+        this.setState({loading:true, error:null})
+        try{
+            const data = await api.badges.read(this.props.match.params.badgeId)
+            this.setState({loading:false, form:data})
+        }catch(error){
+            this.setState({loading:false, error:error})
+        }
+    }
+
     handleChange = event => {
         this.setState({
             form:{
@@ -39,7 +54,7 @@ class NewBadge extends React.Component{
         this.setState({loading:true, error:null})
 
         try{
-            await api.badges.create(this.state.form)
+            await api.badges.update(this.props.match.params.badgeId, this.state.form)
             this.setState({loading:false, error:null})
             this.props.history.push("/badges")
         } catch (error){
@@ -50,7 +65,7 @@ class NewBadge extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <Hero h={'15vh'}></Hero>
+                <Hero h={'10vh'}></Hero>
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
@@ -64,7 +79,6 @@ class NewBadge extends React.Component{
                                 likes={this.state.form.likes || "0"}
                                 posts={this.state.form.posts || "0"}
                             >
-
                             </Badge>
                         </div>
                         <div className="col-6">
@@ -82,4 +96,4 @@ class NewBadge extends React.Component{
     }
 }
 
-export default NewBadge
+export default EditBadge

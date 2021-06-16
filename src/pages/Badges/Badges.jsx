@@ -2,6 +2,7 @@ import React from 'react'
 import api from '../../libs/fetch'
 import SkeletonItem from '../../components/SkeletonItem'
 import './Badges.css'
+import Button from '../../components/MainButton'
 import BadgesList from '../../components/BadgesList'
 import Footer from '../../components/Footer'
 
@@ -49,9 +50,18 @@ class Badges extends React.Component {
         }
         return (
             <React.Fragment>
-                <div className="Badges__container"></div>
+{/*             <div className="Badges__container">
+                    <div className="Badges__button">
+                        <Button
+                            theme={"Button-light"}
+                            contentText={"New Badge"}
+                            link={"/new"}
+                        >
+                        </Button>
+                    </div>
+                </div> */}
                 <BadgesList badges={this.state.data}></BadgesList>
-                <Footer s={this.state.handle_footer}></Footer>
+                {/* <Footer s={this.state.handle_footer}></Footer> */}
             </React.Fragment>
         );
     }

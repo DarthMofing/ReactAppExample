@@ -47,3 +47,17 @@
     justify-content: center;
 }
 
+.BadgeList__search-bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* .BadgeList__search {
+    width: 200px !important;
+}
+
+.BadgeList__search__row {
+    width: 350px;
+    
+} */
