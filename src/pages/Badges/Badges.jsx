@@ -2,9 +2,7 @@ import React from 'react'
 import api from '../../libs/fetch'
 import SkeletonItem from '../../components/SkeletonItem'
 import './Badges.css'
-/* import Button from '../../components/MainButton' */
 import BadgesList from '../../components/BadgesList'
-/* import Footer from '../../components/Footer' */
 import PageError from '../../components/PageError'
 
 class Badges extends React.Component {
